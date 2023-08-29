@@ -31,13 +31,19 @@ class UserCard extends StatelessWidget {
           const SizedBox(
             width: 110,
           ),
-          const Icon(
-            Icons.edit,
-            color: Colors.blue,
+          GestureDetector(
+            onTap: () {},
+            child: const Icon(
+              Icons.edit,
+              color: Colors.blue,
+            ),
           ),
-          const Icon(
-            Icons.delete,
-            color: Colors.red,
+          GestureDetector(
+            onTap: () {},
+            child: const Icon(
+              Icons.delete,
+              color: Colors.red,
+            ),
           ),
         ],
       ),

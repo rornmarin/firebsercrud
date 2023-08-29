@@ -15,20 +15,25 @@ class HomeScreen extends StatelessWidget {
         ),
         backgroundColor: Colors.green.shade700,
       ),
-      body: Column(
+      body: const Column(
         children: [
-          const UserCard(),
-          FloatingActionButton(
-            onPressed: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (BuildContext context) => AddUser()),
-              );
-              //
-            },
-            child: const Icon(Icons.add),
-          )
+          UserCard(),
         ],
+      ),
+      floatingActionButton: FloatingActionButton(
+        backgroundColor: Colors.green.shade700,
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (BuildContext context) => AddUser()),
+          );
+          //
+        },
+        child: const Icon(
+          Icons.add,
+          size: 20,
+          color: Colors.white,
+        ),
       ),
     );
   }
